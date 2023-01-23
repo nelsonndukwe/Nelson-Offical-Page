@@ -174,3 +174,71 @@ transition: 0.8s ease;
     transition: 10s ease-in-out;
 
 }
+
+
+@media screen and (max-width:600px){
+    .about__conatiner{
+       display: flex;
+       flex-direction: column;
+        gap: 3rem;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .about__skills{
+           row-gap: 1.25rem;
+
+    } 
+
+    .about__data{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+
+    .about__img{
+        width: 50%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .about__skills{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:768px){
+    .about__conatiner{
+       display: flex;
+       flex-direction: column;
+        gap: 3rem;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .about__skills{
+           row-gap: 1.25rem;
+
+    } 
+
+    .about__data{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+
+    .about__img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .about__skills{
+        width: 100%;
+    }
+
+
+}

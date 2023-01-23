@@ -49,7 +49,7 @@
 
 .header__socails-links:hover{
     color: var(--first-color);
-    transition: .3s ease;
+    transition: .3s ease-in-out;
 }
 
 .scroll__down {

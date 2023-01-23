@@ -30,7 +30,7 @@
 
 }
 
-.work__card{
+.work__card {
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
@@ -38,7 +38,7 @@
 
 }
 
-.work__mask{
+.work__mask {
     position: absolute;
     background: #6c6ce5;
     left: 0;
@@ -49,11 +49,11 @@
     opacity: 0;
 }
 
-.work__card:hover .work__mask{
+.work__card:hover .work__mask {
     opacity: 0.5;
 }
 
-.work__category{
+.work__category {
     color: #fff;
     background: var(--first-color);
     position: absolute;
@@ -65,12 +65,12 @@
     padding: 0.19rem 0.625rem;
     font-size: var(--small-font-size);
     transform: translateY(-40px);
-    transition: 0.3s ;
+    transition: 0.3s;
 
 
 }
 
-.work__title{
+.work__title {
     color: #fff;
     font-size: var(--h3-font-size);
     margin: 0 0 0.9rem;
@@ -82,7 +82,7 @@
     opacity: 0;
 }
 
-.work__button{
+.work__button {
     color: #fff;
     position: absolute;
     bottom: 1.5rem;
@@ -101,11 +101,25 @@
 
 }
 
-.work__card:hover .work__button{
+.work__card:hover .work__button {
     opacity: 1;
 }
 
-.work__card:hover .work__title, .work__card:hover .work__category{
-opacity: 1;
-transform: translateY(0);
+.work__card:hover .work__title,
+.work__card:hover .work__category {
+    opacity: 1;
+    transform: translateY(0);
 }
+
+@media screen and (max-width:600px) {
+    .works__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem;
+
+    }
+
+
+
+}
+
+@media screen and (max-width : 768px) {}

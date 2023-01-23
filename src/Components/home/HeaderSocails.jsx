@@ -3,26 +3,22 @@ import './Home.css'
 import {BsInstagram} from 'react-icons/bs'
 import {FiTwitter} from 'react-icons/fi'
 import {GrLinkedinOption} from 'react-icons/gr'
-import {BsDribbble} from 'react-icons/bs'
 
 
 const HeaderSocails = () => {
   return (
     <div className='header__socails'>
-    <a className='header__socails-links' href='' target='_blank'>
+    <a className='header__socails-links' href='https://www.instagram.com/nelsonndukwe/' target='_blank'>
     <BsInstagram/></a>
 
-    <a className='header__socails-links' href='' target='_blank'>
+    <a className='header__socails-links' href='https://twitter.com/NelsonNdukwe6' target='_blank'>
         <FiTwitter/>
     </a>
 
-    <a className='header__socails-links' href='https://www.linkedin.com/feed/' target='_blank'>
+    <a className='header__socails-links' href='https://www.linkedin.com/in/nelson-ndukwe-040b6a168/' target='_blank'>
         <GrLinkedinOption />
     </a>
-
-    <a className='header__socails-links' href='' target='_blank'>
-        <BsDribbble/>
-    </a>
+    
     </div>
   )
 }

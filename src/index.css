@@ -201,7 +201,7 @@ p {
 }
 
 .theme-color {
-  background: black;
+  background: #191919;
   --first-color: hsl(353, 100%, 65%);
   --title-color: var(--body-color);
   --text-color: hsl(244, 16%, 43%);
@@ -230,3 +230,15 @@ p {
 
 }
 
+.Brightness {
+  position: fixed;
+  right: 150px;
+  top: 200px;
+}
+
+.Brightness__icon {
+  font-size: 2rem;
+  font-weight: 500;
+  z-index: 150;
+
+}

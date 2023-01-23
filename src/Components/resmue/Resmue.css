@@ -67,3 +67,22 @@
     font-size: var(--h3-font-size);
     margin: 0.5rem 0;
 }
+
+@media screen and (max-width:600px) {
+    .resume__conatiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media screen and (max-width : 768px) {
+    .resume__conatiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
