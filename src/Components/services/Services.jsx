@@ -10,23 +10,23 @@ const Services = () => {
     {
       id: 1,
       image: Image1,
-      title: "UI/UX design",
+      title: "Community Manager",
       description:
-        "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+        "Nelson is an experineced Community Manager with more than 2 years experince on Campus Connect- Steemit",
     },
     {
       id: 2,
       image: Image2,
       title: "Web Development",
       description:
-        "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+        "Building and Creating scalable Apps and Solutions is what i love to do, i build and develop.",
     },
     {
       id: 3,
       image: Image3,
-      title: "Photography",
+      title: "Technical Writer",
       description:
-        "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+        "Nelson is equipped with all the required experinece and skill in Technical Wriring with more than 5 years experince and More than 100 Articles",
     },
   ];
 

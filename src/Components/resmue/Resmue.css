@@ -12,17 +12,27 @@
     box-shadow: var(--shadow);
     border: 1px solid var(--title-color);
 
+
+}
+
+.timeline__text{
+    max-width: 80%;
+}
+
+
+.timeline__item{
+    max-width: 100%;
 }
 
 .timeline:first-child:hover{
     transform: translateX(-10%);
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 
 .timeline:last-child:hover{
     transform: translateX(10%);
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .timeline__item{

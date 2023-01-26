@@ -17,6 +17,11 @@
 
 }
 
+.contact__icon-div:nth-child(4){
+    font-size: 5rem;
+    color: var(--title-color);
+
+}
 .contact__icon:hover{
     color: var(--first-color);
     transition: var(--transition);
