@@ -1,7 +1,10 @@
 import React from 'react'
 import './Testimonial.css'
-import Image1 from '../../Assets/avatar-1.svg'
-import Image3 from '../../Assets/avatar-3.svg'
+import Image1 from '../../Assets/avatar3.jpg'
+import Image3 from '../../Assets/avatar4.jpg'
+import number1 from '../../Assets/avatar1.jpg'
+import number2 from '../../Assets/avatar2.jpg'
+
 import { Navigation, Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,35 +23,31 @@ const Testimonial = () => {
     {
       id: 1,
       image: Image1,
-      title: "John Doe",
-      subtitle: "Product designer at Dribble",
+      title: "Tochi",
+      subtitle: "Frontend Devloper and Ui/UX design",
       comment:
-        "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
+        "Working with Nelson for About 13 months has been a great working experience, always ready to face the challenges and to deliver tasks as at when due",
     },
     {
+
+
       id: 2,
       image: Image3,
-      title: "John Doe",
-      subtitle: "Product designer at Dribble",
+      title: "Anita",
+      subtitle: "Client",
       comment:
-        "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
+        "Working and Learning with Nelosn has been by far the best learning experince i have had in my whole life, his understanding of the forex and crypto market is immense.",
     },
     {
-      id: 2,
-      image: Image3,
-      title: "John Doe",
-      subtitle: "Product designer at Dribble",
+      id: 3,
+      image: number1,
+      title: "Marvel",
+      subtitle: "Project Manager At Groove",
       comment:
-        "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
+        "Working with Nelson as a Frontend developer on our groove project has proved to be a spectauclar experince as a result of his insane work ethic and vivalious sense of humour.Good luck! 👍",
     },
-    {
-      id: 2,
-      image: Image3,
-      title: "John Doe",
-      subtitle: "Product designer at Dribble",
-      comment:
-        "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
-    },
+    
+  
     
   ];
 
@@ -80,7 +79,7 @@ const Testimonial = () => {
 
                 >
                   <div className='thumb'>
-                    <img src={image} alt='testimonail image' />
+                    <img src={image} alt='testimonail image'  className='testimonial__image'/>
                   </div>
                   <h3 className='testimonial__title'>{title}</h3>
                   <span className='testiominal__subtitle'>{subtitle}</span>

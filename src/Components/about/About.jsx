@@ -3,8 +3,47 @@ import './About.css'
 import Me from '../../Assets/NFT1.jpg'
 import Aboutbox from './Aboutbox'
 import File from '../../Assets/CV.pdf'
+import { animate, motion } from 'framer-motion'
 
 const About = () => {
+  const stagger = {
+    animate:{
+      transition:{
+        delayChildren:0.8,
+        staggerChildren:0.2
+
+      }
+
+    }
+  }
+
+  const header = {
+    initial:{
+      y:-60,
+      opacity:0,
+      transition:{
+        duration:0.05,
+        ease:"easeInOut"
+      }
+    },
+
+    animate:{
+      y:0,
+      opacity:1,
+      transition:{
+        duration:0.6,
+        ease:"easeInOut"
+      }
+
+    }
+
+  }
+
+
+
+  
+
+
   return (
     <section className=' about container section' id='about'>
       <h2 className='section__title '>

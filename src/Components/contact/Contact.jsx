@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Contact.css'
 import { FiTwitter } from 'react-icons/fi'
 import { FiLinkedin } from 'react-icons/fi'
@@ -6,8 +6,24 @@ import { SiSteemit } from 'react-icons/si'
 import { MdOutgoingMail } from 'react-icons/md'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { MdSignalWifiConnectedNoInternet0 } from "react-icons/md"
+import { motion } from 'framer-motion'
+// import { Alert, Space } from 'antd';
+
 
 const Contact = () => {
+
+  const [submit, setSubmitted] = useState("false")
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSubmitted("false")
+    }, 3000)
+
+    return () => clearTimeout(timer)
+  }, [submit])
+
 
   const form = useRef();
 
@@ -17,11 +33,13 @@ const Contact = () => {
     emailjs.sendForm('service_1xzqtlh', 'template_oljgyha', form.current, 'BLLsOFvUMfZ6fbN5U')
       .then((result) => {
         console.log(result.text);
+        setSubmitted("true")
       }, (error) => {
         console.log(error.text);
+        setSubmitted("error")
       });
 
-      e.target.reset()
+    e.target.reset()
   };
 
 
@@ -75,12 +93,36 @@ const Contact = () => {
 
 
 
-          <input className='btn' type='submit' value="Dispatch" />
+          <input className="btn" type='submit' value={submit === "true" ? "Sent" : "Dispatch"} />
+
+          <motion.span className={submit === "error" ? 'error__message': "error-message" }
+
+            initial={{ y: "-30%", opacity: 0 }}
+            animate={{ y: "0%", opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1, type: "spring", stiffness: 500, ease: "easeInOut" }}
+
+          > <MdSignalWifiConnectedNoInternet0 /> Network Error</motion.span>
 
         </form>
 
 
       </div>
+
+
+      {/* <Space
+        direction="vertical"
+        style={{
+          width: '100%',
+        }}
+      >
+        <Alert
+          message="Error"
+          description="This is an error message about copywriting."
+          type="error"
+          showIcon
+        />
+      </Space> */}
+
     </section>
   )
 }

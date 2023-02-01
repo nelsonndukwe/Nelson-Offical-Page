@@ -40,7 +40,7 @@ const Services = () => {
           ({ id, image, title, description }) => {
             return (
               <div className='services__card' key={id}>
-                <img src={image} className='services__img' />
+                <img src={image} className='services__img' alt='service' />
                 <h3 className='services__title'>{title}</h3>
                 <p className='services__description'>{description}</p>
                 

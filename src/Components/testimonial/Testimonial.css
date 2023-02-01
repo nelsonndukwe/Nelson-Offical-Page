@@ -63,6 +63,8 @@
     color:var(--title-color) !important
 }
 
-
+.thumb img{
+    border-radius: 50%;
+}
 
 

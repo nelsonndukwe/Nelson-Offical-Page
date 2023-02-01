@@ -125,3 +125,23 @@
 
 
 }
+
+.contact__form{
+    position: relative;
+}
+
+.error__message{
+    position: absolute;
+    padding: 10px;
+    display: inline-block;
+    right: 0;
+    bottom: 2px;
+    color: var(--first-color);
+    border-radius: var(--border-radius);
+    animation: errorslide 5s ;
+}
+
+.error-message{
+    visibility: hidden;
+    opacity: 0;
+}
