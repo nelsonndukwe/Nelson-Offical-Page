@@ -145,3 +145,17 @@
     visibility: hidden;
     opacity: 0;
 }
+
+input:invalid{
+    border: 1px solid red;
+}
+
+input:valid{
+    border: 1px solid green;
+
+}
+
+input::placeholder{
+    color: var(--title-color);
+
+}
