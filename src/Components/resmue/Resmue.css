@@ -84,6 +84,15 @@
         flex-direction: column;
     }
 
+    .timeline:first-child:hover{
+        transform: none;
+    }
+    
+    
+    .timeline:last-child:hover{
+        transform: none;
+    }
+
 
 
 }
