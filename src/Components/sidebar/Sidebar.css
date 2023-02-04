@@ -36,3 +36,28 @@ nav a.active{
     color: var(--first-color);
 
 }
+
+
+@media screen and (max-width : 600px) {
+
+    nav{
+        background: hsl(244, 24%, 26%);
+        width: 90%;
+        display: block;
+        padding: 0.7rem 1.5rem;
+        z-index: 99;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1.8rem;
+        border-radius: 1rem;
+        backdrop-filter: blur(15px);
+        
+    
+    
+    }
+    
+}
